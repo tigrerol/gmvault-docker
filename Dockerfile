@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
 # GMVAULT_DIR allows using a location that is not the default $HOME/.gmvault.
 ENV GMVAULT_DIR="/data" \
