@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM alpine:3.7
 
 # GMVAULT_DIR allows using a location that is not the default $HOME/.gmvault.
 ENV GMVAULT_DIR="/data" \
@@ -13,7 +13,7 @@ VOLUME $GMVAULT_DIR
 RUN mkdir /app
 
 # Set up environment.
-RUN apt add --update \
+RUN apk add --update \
 		bash \
 		ca-certificates \
 		mailx \
