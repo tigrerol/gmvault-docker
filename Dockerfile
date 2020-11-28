@@ -13,7 +13,7 @@ VOLUME $GMVAULT_DIR
 RUN mkdir /app
 
 # Set up environment.
-RUN apk add --update \
+RUN apt add --update \
 		bash \
 		ca-certificates \
 		mailx \
