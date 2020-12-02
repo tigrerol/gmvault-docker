@@ -51,8 +51,7 @@ echo "${GMVAULT_QUICK_SYNC_SCHEDULE} /app/backup_quick.sh" >> $CRONTAB
 		fi
 	else
 		echo "No sync on startup, see GMVAULT_SYNC_ON_STARTUP if you would like to change this."
-
-	crond -f
-fi
+    fi
+crond -f
 
 /bin/bash
